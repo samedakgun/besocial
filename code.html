@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BeSocial | Dijitalin Ötesine Geçin</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#0f172a",
+              "surface-container": "#171f33",
+              "tertiary": "#d0bcff",
+              "surface": "#0b1326",
+              "surface-tint": "#bec6e0",
+              "surface-container-low": "#131b2e",
+              "tertiary-container": "#1e0052",
+              "inverse-surface": "#dae2fd",
+              "secondary-container": "#0566d9",
+              "error": "#ffb4ab",
+              "primary": "#bec6e0",
+              "secondary-fixed-dim": "#adc6ff",
+              "on-error-container": "#ffdad6",
+              "on-background": "#dae2fd",
+              "on-secondary-container": "#e6ecff",
+              "surface-bright": "#31394d",
+              "outline-variant": "#45464d",
+              "on-tertiary-fixed": "#23005c",
+              "on-surface": "#dae2fd",
+              "outline": "#909097",
+              "surface-container-high": "#222a3d",
+              "tertiary-fixed": "#e9ddff",
+              "error-container": "#93000a",
+              "surface-container-lowest": "#060e20",
+              "on-tertiary-fixed-variant": "#5516be",
+              "tertiary-fixed-dim": "#d0bcff",
+              "secondary-fixed": "#d8e2ff",
+              "on-primary-container": "#798098",
+              "on-surface-variant": "#c6c6cd",
+              "on-error": "#690005",
+              "on-secondary-fixed-variant": "#004395",
+              "surface-container-highest": "#2d3449",
+              "primary-fixed-dim": "#bec6e0",
+              "inverse-primary": "#565e74",
+              "surface-dim": "#0b1326",
+              "on-tertiary": "#3c0091",
+              "primary-fixed": "#dae2fd",
+              "on-primary-fixed": "#131b2e",
+              "secondary": "#adc6ff",
+              "inverse-on-surface": "#283044",
+              "on-secondary-fixed": "#001a42",
+              "on-secondary": "#002e6a",
+              "on-tertiary-container": "#9162fc",
+              "on-primary": "#283044",
+              "background": "#0b1326",
+              "surface-variant": "#2d3449",
+              "on-primary-fixed-variant": "#3f465c"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #adc6ff 0%, #0566d9 100%);
+        }
+        .glass-panel {
+            background: rgba(45, 52, 73, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl shadow-2xl shadow-black/40">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-100">BeSocial</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-manrope tracking-tighter uppercase text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#services">Services</a>
+<a class="font-manrope tracking-tighter uppercase text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#team">Team</a>
+<a class="font-manrope tracking-tighter uppercase text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#contact">Contact</a>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-xl font-manrope tracking-tighter uppercase text-sm font-bold scale-95 active:scale-90 transition-transform">Let's Talk</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20">
+<div class="absolute inset-0 z-0 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
+<img alt="Hero Background" class="w-full h-full object-cover" data-alt="Abstract futuristic digital landscape with glowing blue data lines and geometric structures in a dark cinematic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZVLi0XkhwdrTlpoRdJ0JXLy9YB80OicoFmKrIC-W4VOnn0_Jm2w3rWsuGch213I-blo3Uxii6dZP82hm7JgKXmc7Lw40PSsREHFYw3analsbFTagYznlfuzmu_tvIctBy3e0Jij9-J9krXHkJmKGKdTqkAcwFtJMlGgmbAFkGvDaBMdDROi_e2qkdSB4gmylVZNPqu7VaAShOT_RdpPWZ6LYkPBBvxdgBamx4X2Ji7U6gtbTUgK0q4rTiYYzrnizjCkPrF1MD-e1B"/>
+</div>
+<div class="container mx-auto px-8 relative z-20">
+<div class="max-w-4xl">
+<span class="inline-block px-4 py-1 mb-6 text-xs font-bold tracking-[0.2em] uppercase bg-secondary-container/20 text-secondary border border-secondary/30 rounded-full">Kinetic Monolith Edition</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface mb-8 leading-[0.9]">
+                    Dijitalin <span class="text-secondary italic">Ötesine</span> Geçin
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl mb-12 leading-relaxed">
+                    BeSocial, markanızın dijital DNA'sını yeniden kodlar. Kreatif zeka ve teknolojik hassasiyetin kesiştiği noktada hikayenizi geleceğe taşıyoruz.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="kinetic-gradient text-on-secondary-container px-8 py-4 rounded-xl font-bold uppercase tracking-wider text-sm shadow-lg shadow-secondary-container/20 hover:scale-105 transition-transform">
+                        Projeyi Başlat
+                    </button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-bold uppercase tracking-wider text-sm border border-outline-variant/20 hover:bg-surface-container-highest transition-colors">
+                        Sürecimizi İncele
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface-container-lowest" id="services">
+<div class="container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-6">Uzmanlık Alanlarımız</h2>
+<p class="text-on-surface-variant text-lg">Geleneksel sınırları aşan, veri odaklı ve estetik mükemmeliyet arayan servis yelpazemiz.</p>
+</div>
+<div class="text-secondary font-bold tracking-widest uppercase text-xs pb-4 border-b-2 border-secondary">Services 01—04</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Service 1 -->
+<div class="group p-8 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-highest transition-all duration-500">
+<div class="mb-8 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="digital_outposts">digital_out_of_home</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Dijital Dönüşüm</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">İş modellerinizi dijital çağın gerekliliklerine göre modernize ediyor, teknolojik altyapınızı güçlendiriyoruz.</p>
+<div class="w-0 group-hover:w-full h-1 bg-secondary transition-all duration-500"></div>
+</div>
+<!-- Service 2 -->
+<div class="group p-8 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-highest transition-all duration-500">
+<div class="mb-8 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="brush">brush</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Kreatif Tasarım</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Görsel kimliğinizi estetik ve fonksiyonelliği harmanlayarak, akılda kalıcı deneyimlere dönüştürüyoruz.</p>
+<div class="w-0 group-hover:w-full h-1 bg-secondary transition-all duration-500"></div>
+</div>
+<!-- Service 3 -->
+<div class="group p-8 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-highest transition-all duration-500">
+<div class="mb-8 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="movie">movie</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Profesyonel Çekim</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Prodüksiyon ekibimizle markanız için sinematik kalitede video ve fotoğraf içerikleri üretiyoruz.</p>
+<div class="w-0 group-hover:w-full h-1 bg-secondary transition-all duration-500"></div>
+</div>
+<!-- Service 4 -->
+<div class="group p-8 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-highest transition-all duration-500">
+<div class="mb-8 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="share">share</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-4">Sosyal Medya</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Topluluk yönetimi ve stratejik içerik planlaması ile dijital varlığınızı her platformda optimize ediyoruz.</p>
+<div class="w-0 group-hover:w-full h-1 bg-secondary transition-all duration-500"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-32 bg-surface" id="team">
+<div class="container mx-auto px-8">
+<h2 class="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-20 text-center">Vizyoner <span class="text-tertiary">Zihinler</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Buket Ceylan -->
+<div class="group relative">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img alt="Buket Ceylan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Professional woman portrait with confident expression in a high-end corporate setting, soft rim lighting, dark navy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzRaeoPFbFViNhI5vrSt-GpYeankAYmdkmfmI6NUyJJ2dgc7sH79gM0gFwnmo0zRKxBXaA4wvGTYG4TjRKADIkj0dabYfRsqM_IwkRMDomVzmhlE9QoPIi-7xUiBNERhxY2seILfQ_oiIRokVDC4IPJdGFnwDy-OHM13pVywb4CuNHBqBtKvpcqFcwkHCLrKCtKmmJ5HX6j3totMj-5TGsfHxefS_hEYntnb6QDScd-iWzKfyGOlRXIcP2IC8xSEcv-4irJFX2L8_9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+</div>
+<h4 class="text-2xl font-headline font-bold text-slate-100">Buket Ceylan</h4>
+<p class="text-tertiary text-sm font-bold tracking-widest uppercase mt-1">Yönetici Ortak</p>
+</div>
+<!-- Samed Akgün -->
+<div class="group relative">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img alt="Samed Akgün" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Modern creative professional male portrait, minimalist studio lighting, high contrast aesthetic, focused expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlPkyATU1oWvXSTVI-OkY6nQexTp7m93E9zMm0QG6L_Bd-OvFZ-SfvKr-9lNcLXIzf5RY2vAbMU4ZsP0aFkNCRSLOZt3VbE7a3hGmy8_Hi-z0H4nRnV83CYJc8KMp6Q0zaJ09R2ISTd4yR1Pjh8ancj05yGUaWvM6NVqkzdR6HuqqG3hXd_1b4EZugB9xLCSMvXxieH1jbXPxl9T_jJ-T2ngqbGtRC2Gnet_nDkNvMcjZp6SZL83u4xbiUNF18gtbVT4Fq7mQpW4uh"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+</div>
+<h4 class="text-2xl font-headline font-bold text-slate-100">Samed Akgün</h4>
+<p class="text-tertiary text-sm font-bold tracking-widest uppercase mt-1">Kreatif Direktör</p>
+</div>
+<!-- Özge -->
+<div class="group relative">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img alt="Özge" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Young professional woman with thoughtful look, elegant and modern style, soft focused background, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG_Vr5Rx4fmQUP97R3y3T-dr4OnOWuGIZcInJyds7zLGWhbxew_AeMwNtjLZLitINjgg7s4CdOQk1eHucY7KB2eoanwen3V_ijXNxgdjUsNPWIedqKoRwLN8BJEoqVlH83dk41hGEHvSfZTkILX4WsblU513PrQ5whFbRo4ekEZCvgOIpDNN6ap4HIo1ZYSetb-QrWyzHj7UurLS0f17i2nE4MPcUx6u5TbtWBEN0CMKSDYNSvgsfIClJSOgxM60_Q9UTW92dwBjvG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+</div>
+<h4 class="text-2xl font-headline font-bold text-slate-100">Özge</h4>
+<p class="text-tertiary text-sm font-bold tracking-widest uppercase mt-1">Operasyon Müdürü</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-surface-container-low" id="contact">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<h2 class="text-5xl font-headline font-bold tracking-tighter mb-8 text-on-surface">Birlikte <br/>İnşa Edelim</h2>
+<p class="text-on-surface-variant text-lg mb-12 max-w-md">Bir sonraki büyük fikriniz için biz hazırız. Bizimle iletişime geçin ve dijital dönüşümünüzü başlatalım.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-bold text-slate-100">BeSocial Merkez Ofis</p>
+<p class="text-on-surface-variant text-sm">Levent, Büyükdere Cd. No:123<br/>Beşiktaş, İstanbul</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="mail">mail</span>
+<div>
+<p class="font-bold text-slate-100">E-posta</p>
+<p class="text-on-surface-variant text-sm">hello@besocial.agency</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-panel p-10 rounded-2xl border border-outline-variant/20 shadow-2xl">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Adınız</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 text-on-surface focus:ring-0 focus:border-secondary transition-all py-3 px-0" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">E-posta</label>
+<input class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 text-on-surface focus:ring-0 focus:border-secondary transition-all py-3 px-0" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Hizmet Seçin</label>
+<select class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 text-on-surface focus:ring-0 focus:border-secondary transition-all py-3 px-0">
+<option>Dijital Dönüşüm</option>
+<option>Kreatif Tasarım</option>
+<option>Prodüksiyon</option>
+<option>Sosyal Medya</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Mesajınız</label>
+<textarea class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 text-on-surface focus:ring-0 focus:border-secondary transition-all py-3 px-0 resize-none" rows="4"></textarea>
+</div>
+<button class="w-full kinetic-gradient text-on-secondary-container font-bold py-4 rounded-xl uppercase tracking-[0.2em] shadow-xl hover:shadow-secondary-container/20 transition-all" type="submit">Gönder</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full border-t border-slate-800/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-bold text-slate-100">BeSocial</div>
+<p class="font-manrope text-sm text-slate-400 mt-2">© 2024 BeSocial Digital Agency. Kinetic Monolith Edition.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-manrope text-sm text-slate-400 hover:text-slate-100 transition-colors" href="#">Instagram</a>
+<a class="font-manrope text-sm text-slate-400 hover:text-slate-100 transition-colors" href="#">LinkedIn</a>
+<a class="font-manrope text-sm text-slate-400 hover:text-slate-100 transition-colors" href="#">Vimeo</a>
+<a class="font-manrope text-sm text-slate-400 hover:text-slate-100 transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+</body></html>
