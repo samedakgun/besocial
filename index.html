@@ -1,282 +1,695 @@
 <!DOCTYPE html>
+<html class="dark" lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Be Social — Dürüst, Yaratıcı ve Stratejik İletişim Ajansı</title>
+  <meta name="description" content="Be Social, iletişim ve marka stratejisi alanında 10 yılı aşkın deneyime sahip yaratıcı bir ajans. Gürültüyü değil, etkiyi büyütürüz."/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
-<html class="dark" lang="tr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>BeSocial | Dijitalin Ötesine Geçin</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary-container": "#0f172a",
-              "surface-container": "#171f33",
-              "tertiary": "#d0bcff",
-              "surface": "#0b1326",
-              "surface-tint": "#bec6e0",
-              "surface-container-low": "#131b2e",
-              "tertiary-container": "#1e0052",
-              "inverse-surface": "#dae2fd",
-              "secondary-container": "#0566d9",
-              "error": "#ffb4ab",
-              "primary": "#bec6e0",
-              "secondary-fixed-dim": "#adc6ff",
-              "on-error-container": "#ffdad6",
-              "on-background": "#dae2fd",
-              "on-secondary-container": "#e6ecff",
-              "surface-bright": "#31394d",
-              "outline-variant": "#45464d",
-              "on-tertiary-fixed": "#23005c",
-              "on-surface": "#dae2fd",
-              "outline": "#909097",
-              "surface-container-high": "#222a3d",
-              "tertiary-fixed": "#e9ddff",
-              "error-container": "#93000a",
-              "surface-container-lowest": "#060e20",
-              "on-tertiary-fixed-variant": "#5516be",
-              "tertiary-fixed-dim": "#d0bcff",
-              "secondary-fixed": "#d8e2ff",
-              "on-primary-container": "#798098",
-              "on-surface-variant": "#c6c6cd",
-              "on-error": "#690005",
-              "on-secondary-fixed-variant": "#004395",
-              "surface-container-highest": "#2d3449",
-              "primary-fixed-dim": "#bec6e0",
-              "inverse-primary": "#565e74",
-              "surface-dim": "#0b1326",
-              "on-tertiary": "#3c0091",
-              "primary-fixed": "#dae2fd",
-              "on-primary-fixed": "#131b2e",
-              "secondary": "#adc6ff",
-              "inverse-on-surface": "#283044",
-              "on-secondary-fixed": "#001a42",
-              "on-secondary": "#002e6a",
-              "on-tertiary-container": "#9162fc",
-              "on-primary": "#283044",
-              "background": "#0b1326",
-              "surface-variant": "#2d3449",
-              "on-primary-fixed-variant": "#3f465c"
-            },
-            fontFamily: {
-              "headline": ["Manrope"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface":                    "#131313",
+            "surface-dim":                "#0D0D0D",
+            "surface-container":          "#1E1E1E",
+            "surface-container-low":      "#191919",
+            "surface-container-lowest":   "#0A0A0A",
+            "on-surface":                 "#E8E5E1",
+            "on-surface-variant":         "#9A928A",
+            "outline-variant":            "#2E2B28",
+            "secondary-fixed":            "#F5F2EC",
+            "on-secondary-fixed":         "#1A1714",
+            "on-secondary-fixed-variant": "#6B6560",
+            "primary":                    "#DFC29F",
+            "primary-container":          "#8B7355",
+            "on-primary":                 "#2A1E0E",
+            "brand-blue":                 "#2254F4",
+          },
+          fontFamily: {
+            "headline": ["Noto Serif", "serif"],
+            "body":     ["Inter",      "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0px", "sm": "0px", "md": "0px",
+            "lg": "0px", "xl": "0px", "2xl": "0px", "full": "9999px"
           },
         },
-      }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .kinetic-gradient {
-            background: linear-gradient(135deg, #adc6ff 0%, #0566d9 100%);
-        }
-        .glass-panel {
-            background: rgba(45, 52, 73, 0.6);
-            backdrop-filter: blur(20px);
-        }
-    </style>
+      },
+    }
+  </script>
+
+  <style>
+    /* ─── Base ─────────────────────────────────────── */
+    html  { scroll-behavior: smooth; }
+    body  { background-color: #131313; color: #E8E5E1; }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* ─── Scroll progress ─────────────────────────── */
+    #progress-bar {
+      position: fixed; top: 0; left: 0; height: 2px;
+      background: #DFC29F; z-index: 200;
+      transition: width 0.08s linear;
+      width: 0%;
+    }
+
+    /* ─── Reveal animations ───────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s ease, transform 0.75s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.10s; }
+    .reveal-d2 { transition-delay: 0.20s; }
+    .reveal-d3 { transition-delay: 0.30s; }
+    .reveal-d4 { transition-delay: 0.40s; }
+
+    /* ─── Noise grain overlay ─────────────────────── */
+    .grain::after {
+      content: '';
+      position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
+      opacity: 1;
+    }
+
+    /* ─── Nav ─────────────────────────────────────── */
+    #navbar {
+      transition: background-color 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+    }
+    #navbar.scrolled {
+      background-color: rgba(13, 13, 13, 0.92) !important;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(255,255,255,0.04);
+    }
+
+    /* ─── Mobile menu ─────────────────────────────── */
+    #mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #mobile-menu.open { transform: translateX(0); }
+
+    /* hamburger lines animation */
+    #hamburger.open .line-1 { transform: translateY(6px) rotate(45deg); }
+    #hamburger.open .line-2 { opacity: 0; transform: scaleX(0); }
+    #hamburger.open .line-3 { transform: translateY(-6px) rotate(-45deg); width: 1.5rem; }
+    .ham-line { transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease; transform-origin: center; }
+
+    /* ─── Team photos ─────────────────────────────── */
+    .team-photo {
+      filter: grayscale(100%) contrast(1.05);
+      transition: filter 0.6s ease, transform 0.6s ease;
+    }
+    .team-card:hover .team-photo { filter: grayscale(0%) contrast(1); }
+    .team-card:hover .team-photo { transform: scale(1.04); }
+
+    /* ─── Service rows ────────────────────────────── */
+    .service-row { transition: background-color 0.25s ease; }
+    .service-row:hover .service-arrow { opacity: 1; transform: translateX(0); }
+    .service-arrow {
+      opacity: 0; transform: translateX(-8px);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    /* ─── Portfolio cards ─────────────────────────── */
+    .work-card img { transition: filter 0.7s ease, transform 0.7s ease; }
+    .work-card:hover img { filter: grayscale(0%); transform: scale(1.06); }
+    .work-card .overlay {
+      opacity: 0; transition: opacity 0.4s ease;
+    }
+    .work-card:hover .overlay { opacity: 1; }
+
+    /* ─── CTA button ──────────────────────────────── */
+    .cta-btn {
+      position: relative; overflow: hidden;
+      transition: color 0.3s ease;
+    }
+    .cta-btn::before {
+      content: ''; position: absolute;
+      inset: 0; background: #2A1E0E;
+      transform: translateX(-101%);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .cta-btn:hover::before { transform: translateX(0); }
+    .cta-btn span { position: relative; z-index: 1; }
+
+    /* ─── Scroll hint pulse ───────────────────────── */
+    @keyframes bob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(6px)} }
+    .bob { animation: bob 1.8s ease-in-out infinite; }
+  </style>
 </head>
-<body class="bg-surface text-on-surface font-body overflow-x-hidden">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl shadow-2xl shadow-black/40">
-<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-<div class="text-2xl font-black tracking-tighter text-slate-100">BeSocial</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-manrope tracking-tighter uppercase text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#services">Services</a>
-<a class="font-manrope tracking-tighter uppercase text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#team">Team</a>
-<a class="font-manrope tracking-tighter uppercase text-sm font-bold text-slate-400 hover:text-slate-100 transition-colors" href="#contact">Contact</a>
-<button class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-xl font-manrope tracking-tighter uppercase text-sm font-bold scale-95 active:scale-90 transition-transform">Let's Talk</button>
-</div>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-20">
-<div class="absolute inset-0 z-0 overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
-<img alt="Hero Background" class="w-full h-full object-cover" data-alt="Abstract futuristic digital landscape with glowing blue data lines and geometric structures in a dark cinematic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZVLi0XkhwdrTlpoRdJ0JXLy9YB80OicoFmKrIC-W4VOnn0_Jm2w3rWsuGch213I-blo3Uxii6dZP82hm7JgKXmc7Lw40PSsREHFYw3analsbFTagYznlfuzmu_tvIctBy3e0Jij9-J9krXHkJmKGKdTqkAcwFtJMlGgmbAFkGvDaBMdDROi_e2qkdSB4gmylVZNPqu7VaAShOT_RdpPWZ6LYkPBBvxdgBamx4X2Ji7U6gtbTUgK0q4rTiYYzrnizjCkPrF1MD-e1B"/>
-</div>
-<div class="container mx-auto px-8 relative z-20">
-<div class="max-w-4xl">
-<span class="inline-block px-4 py-1 mb-6 text-xs font-bold tracking-[0.2em] uppercase bg-secondary-container/20 text-secondary border border-secondary/30 rounded-full">Kinetic Monolith Edition</span>
-<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface mb-8 leading-[0.9]">
-                    Dijitalin <span class="text-secondary italic">Ötesine</span> Geçin
-                </h1>
-<p class="text-xl text-on-surface-variant max-w-2xl mb-12 leading-relaxed">
-                    BeSocial, markanızın dijital DNA'sını yeniden kodlar. Kreatif zeka ve teknolojik hassasiyetin kesiştiği noktada hikayenizi geleceğe taşıyoruz.
-                </p>
-<div class="flex flex-wrap gap-6">
-<button class="kinetic-gradient text-on-secondary-container px-8 py-4 rounded-xl font-bold uppercase tracking-wider text-sm shadow-lg shadow-secondary-container/20 hover:scale-105 transition-transform">
-                        Projeyi Başlat
-                    </button>
-<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-bold uppercase tracking-wider text-sm border border-outline-variant/20 hover:bg-surface-container-highest transition-colors">
-                        Sürecimizi İncele
-                    </button>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="py-32 bg-surface-container-lowest" id="services">
-<div class="container mx-auto px-8">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-<div class="max-w-2xl">
-<h2 class="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-6">Uzmanlık Alanlarımız</h2>
-<p class="text-on-surface-variant text-lg">Geleneksel sınırları aşan, veri odaklı ve estetik mükemmeliyet arayan servis yelpazemiz.</p>
-</div>
-<div class="text-secondary font-bold tracking-widest uppercase text-xs pb-4 border-b-2 border-secondary">Services 01—04</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-<!-- Service 1 -->
-<div class="group p-8 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-highest transition-all duration-500">
-<div class="mb-8 text-secondary">
-<span class="material-symbols-outlined text-4xl" data-icon="digital_outposts">digital_out_of_home</span>
-</div>
-<h3 class="text-2xl font-headline font-bold mb-4">Dijital Dönüşüm</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">İş modellerinizi dijital çağın gerekliliklerine göre modernize ediyor, teknolojik altyapınızı güçlendiriyoruz.</p>
-<div class="w-0 group-hover:w-full h-1 bg-secondary transition-all duration-500"></div>
-</div>
-<!-- Service 2 -->
-<div class="group p-8 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-highest transition-all duration-500">
-<div class="mb-8 text-secondary">
-<span class="material-symbols-outlined text-4xl" data-icon="brush">brush</span>
-</div>
-<h3 class="text-2xl font-headline font-bold mb-4">Kreatif Tasarım</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Görsel kimliğinizi estetik ve fonksiyonelliği harmanlayarak, akılda kalıcı deneyimlere dönüştürüyoruz.</p>
-<div class="w-0 group-hover:w-full h-1 bg-secondary transition-all duration-500"></div>
-</div>
-<!-- Service 3 -->
-<div class="group p-8 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-highest transition-all duration-500">
-<div class="mb-8 text-secondary">
-<span class="material-symbols-outlined text-4xl" data-icon="movie">movie</span>
-</div>
-<h3 class="text-2xl font-headline font-bold mb-4">Profesyonel Çekim</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Prodüksiyon ekibimizle markanız için sinematik kalitede video ve fotoğraf içerikleri üretiyoruz.</p>
-<div class="w-0 group-hover:w-full h-1 bg-secondary transition-all duration-500"></div>
-</div>
-<!-- Service 4 -->
-<div class="group p-8 bg-surface-container border border-outline-variant/10 rounded-xl hover:bg-surface-container-highest transition-all duration-500">
-<div class="mb-8 text-secondary">
-<span class="material-symbols-outlined text-4xl" data-icon="share">share</span>
-</div>
-<h3 class="text-2xl font-headline font-bold mb-4">Sosyal Medya</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Topluluk yönetimi ve stratejik içerik planlaması ile dijital varlığınızı her platformda optimize ediyoruz.</p>
-<div class="w-0 group-hover:w-full h-1 bg-secondary transition-all duration-500"></div>
-</div>
-</div>
-</div>
-</section>
-<!-- Team Section -->
-<section class="py-32 bg-surface" id="team">
-<div class="container mx-auto px-8">
-<h2 class="text-4xl md:text-6xl font-headline font-bold tracking-tighter mb-20 text-center">Vizyoner <span class="text-tertiary">Zihinler</span></h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Buket Ceylan -->
-<div class="group relative">
-<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
-<img alt="Buket Ceylan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Professional woman portrait with confident expression in a high-end corporate setting, soft rim lighting, dark navy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzRaeoPFbFViNhI5vrSt-GpYeankAYmdkmfmI6NUyJJ2dgc7sH79gM0gFwnmo0zRKxBXaA4wvGTYG4TjRKADIkj0dabYfRsqM_IwkRMDomVzmhlE9QoPIi-7xUiBNERhxY2seILfQ_oiIRokVDC4IPJdGFnwDy-OHM13pVywb4CuNHBqBtKvpcqFcwkHCLrKCtKmmJ5HX6j3totMj-5TGsfHxefS_hEYntnb6QDScd-iWzKfyGOlRXIcP2IC8xSEcv-4irJFX2L8_9"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
-</div>
-<h4 class="text-2xl font-headline font-bold text-slate-100">Buket Ceylan</h4>
-<p class="text-tertiary text-sm font-bold tracking-widest uppercase mt-1">Yönetici Ortak</p>
-</div>
-<!-- Samed Akgün -->
-<div class="group relative">
-<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
-<img alt="Samed Akgün" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Modern creative professional male portrait, minimalist studio lighting, high contrast aesthetic, focused expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlPkyATU1oWvXSTVI-OkY6nQexTp7m93E9zMm0QG6L_Bd-OvFZ-SfvKr-9lNcLXIzf5RY2vAbMU4ZsP0aFkNCRSLOZt3VbE7a3hGmy8_Hi-z0H4nRnV83CYJc8KMp6Q0zaJ09R2ISTd4yR1Pjh8ancj05yGUaWvM6NVqkzdR6HuqqG3hXd_1b4EZugB9xLCSMvXxieH1jbXPxl9T_jJ-T2ngqbGtRC2Gnet_nDkNvMcjZp6SZL83u4xbiUNF18gtbVT4Fq7mQpW4uh"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
-</div>
-<h4 class="text-2xl font-headline font-bold text-slate-100">Samed Akgün</h4>
-<p class="text-tertiary text-sm font-bold tracking-widest uppercase mt-1">Kreatif Direktör</p>
-</div>
-<!-- Özge -->
-<div class="group relative">
-<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
-<img alt="Özge" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Young professional woman with thoughtful look, elegant and modern style, soft focused background, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG_Vr5Rx4fmQUP97R3y3T-dr4OnOWuGIZcInJyds7zLGWhbxew_AeMwNtjLZLitINjgg7s4CdOQk1eHucY7KB2eoanwen3V_ijXNxgdjUsNPWIedqKoRwLN8BJEoqVlH83dk41hGEHvSfZTkILX4WsblU513PrQ5whFbRo4ekEZCvgOIpDNN6ap4HIo1ZYSetb-QrWyzHj7UurLS0f17i2nE4MPcUx6u5TbtWBEN0CMKSDYNSvgsfIClJSOgxM60_Q9UTW92dwBjvG"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
-</div>
-<h4 class="text-2xl font-headline font-bold text-slate-100">Özge</h4>
-<p class="text-tertiary text-sm font-bold tracking-widest uppercase mt-1">Operasyon Müdürü</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="py-32 bg-surface-container-low" id="contact">
-<div class="container mx-auto px-8">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-<div>
-<h2 class="text-5xl font-headline font-bold tracking-tighter mb-8 text-on-surface">Birlikte <br/>İnşa Edelim</h2>
-<p class="text-on-surface-variant text-lg mb-12 max-w-md">Bir sonraki büyük fikriniz için biz hazırız. Bizimle iletişime geçin ve dijital dönüşümünüzü başlatalım.</p>
-<div class="space-y-8">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary" data-icon="location_on">location_on</span>
-<div>
-<p class="font-bold text-slate-100">BeSocial Merkez Ofis</p>
-<p class="text-on-surface-variant text-sm">Levent, Büyükdere Cd. No:123<br/>Beşiktaş, İstanbul</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary" data-icon="mail">mail</span>
-<div>
-<p class="font-bold text-slate-100">E-posta</p>
-<p class="text-on-surface-variant text-sm">hello@besocial.agency</p>
-</div>
-</div>
-</div>
-</div>
-<div class="glass-panel p-10 rounded-2xl border border-outline-variant/20 shadow-2xl">
-<form class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Adınız</label>
-<input class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 text-on-surface focus:ring-0 focus:border-secondary transition-all py-3 px-0" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">E-posta</label>
-<input class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 text-on-surface focus:ring-0 focus:border-secondary transition-all py-3 px-0" type="email"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Hizmet Seçin</label>
-<select class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 text-on-surface focus:ring-0 focus:border-secondary transition-all py-3 px-0">
-<option>Dijital Dönüşüm</option>
-<option>Kreatif Tasarım</option>
-<option>Prodüksiyon</option>
-<option>Sosyal Medya</option>
-</select>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Mesajınız</label>
-<textarea class="w-full bg-surface-container-lowest border-0 border-b border-outline-variant/30 text-on-surface focus:ring-0 focus:border-secondary transition-all py-3 px-0 resize-none" rows="4"></textarea>
-</div>
-<button class="w-full kinetic-gradient text-on-secondary-container font-bold py-4 rounded-xl uppercase tracking-[0.2em] shadow-xl hover:shadow-secondary-container/20 transition-all" type="submit">Gönder</button>
-</form>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-slate-950 w-full border-t border-slate-800/20">
-<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
-<div class="mb-8 md:mb-0">
-<div class="text-xl font-bold text-slate-100">BeSocial</div>
-<p class="font-manrope text-sm text-slate-400 mt-2">© 2024 BeSocial Digital Agency. Kinetic Monolith Edition.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="font-manrope text-sm text-slate-400 hover:text-slate-100 transition-colors" href="#">Instagram</a>
-<a class="font-manrope text-sm text-slate-400 hover:text-slate-100 transition-colors" href="#">LinkedIn</a>
-<a class="font-manrope text-sm text-slate-400 hover:text-slate-100 transition-colors" href="#">Vimeo</a>
-<a class="font-manrope text-sm text-slate-400 hover:text-slate-100 transition-colors" href="#">Privacy Policy</a>
-</div>
-</div>
-</footer>
-</body></html>
+
+<body class="font-body selection:bg-primary selection:text-on-primary">
+
+  <!-- SVG filter: beyaz arka planı şeffaflaştır, mavi logoyu beyaza çevir -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden;">
+    <defs>
+      <filter id="white-bg-remove" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <!-- Beyaz pikselleri şeffaf yap -->
+        <feColorMatrix type="matrix"
+          values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                 -1 -1 -1 3 0" result="masked"/>
+        <!-- Rengi beyaza çevir -->
+        <feColorMatrix in="masked" type="saturate" values="0" result="gray"/>
+        <feColorMatrix in="gray" type="matrix"
+          values="0 0 0 0 1
+                  0 0 0 0 1
+                  0 0 0 0 1
+                  0 0 0 1 0"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- ══════════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════════ -->
+  <nav id="navbar" class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-5" style="background-color:#131313;">
+
+    <a href="#hero" class="flex-shrink-0 z-10">
+      <img src="images/logo/besocial4.png" alt="Be Social" class="h-10 w-auto" style="filter: url(#white-bg-remove);"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+      <span class="font-headline font-bold text-on-surface" style="display:none; font-size:1.35rem; letter-spacing:-0.01em;">be social</span>
+    </a>
+
+    <!-- Desktop nav -->
+    <div class="hidden md:flex items-center gap-10">
+      <a href="#about"    class="nav-link font-body text-xs tracking-[0.2em] uppercase text-on-surface/50 hover:text-primary transition-colors duration-300">Hakkımızda</a>
+      <a href="#services" class="nav-link font-body text-xs tracking-[0.2em] uppercase text-on-surface/50 hover:text-primary transition-colors duration-300">Hizmetler</a>
+      <a href="#work"     class="nav-link font-body text-xs tracking-[0.2em] uppercase text-on-surface/50 hover:text-primary transition-colors duration-300">Çalışmalar</a>
+      <a href="#team"     class="nav-link font-body text-xs tracking-[0.2em] uppercase text-on-surface/50 hover:text-primary transition-colors duration-300">Ekip</a>
+    </div>
+
+    <a href="#contact" class="hidden md:inline-block border border-primary/60 text-primary px-6 py-2.5 text-xs tracking-widest uppercase hover:bg-primary hover:text-on-primary hover:border-primary transition-all duration-300">
+      İletişim
+    </a>
+
+    <!-- Hamburger -->
+    <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2 z-10" aria-label="Menüyü aç">
+      <span class="ham-line line-1 block w-6 h-px bg-on-surface"></span>
+      <span class="ham-line line-2 block w-6 h-px bg-on-surface"></span>
+      <span class="ham-line line-3 block w-4 h-px bg-on-surface"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 bg-surface flex flex-col justify-center px-10">
+    <button id="close-menu" class="absolute top-6 right-6 text-on-surface/60 hover:text-on-surface transition-colors">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <p class="font-body text-xs tracking-[0.25em] uppercase text-primary mb-10">Menü</p>
+    <nav class="flex flex-col gap-6">
+      <a href="#about"    data-close class="font-headline text-4xl text-on-surface/80 hover:text-primary transition-colors">Hakkımızda</a>
+      <a href="#services" data-close class="font-headline text-4xl text-on-surface/80 hover:text-primary transition-colors">Hizmetler</a>
+      <a href="#work"     data-close class="font-headline text-4xl text-on-surface/80 hover:text-primary transition-colors">Çalışmalar</a>
+      <a href="#team"     data-close class="font-headline text-4xl text-on-surface/80 hover:text-primary transition-colors">Ekip</a>
+      <a href="#contact"  data-close class="font-headline text-4xl text-primary">İletişim →</a>
+    </nav>
+    <div class="mt-16 pt-10 border-t border-on-surface/10">
+      <p class="font-body text-xs text-on-surface/30 tracking-widest uppercase">Be Social — Brand Strategy & Digital Growth Studio</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════ -->
+    <section id="hero" class="relative min-h-screen flex flex-col justify-end overflow-hidden grain" style="background-color:#0D0D0D; padding: 0 1.5rem 5rem; padding-top: 6rem;">
+
+      <!-- Huge watermark letter -->
+      <div class="absolute inset-0 flex items-center justify-end pointer-events-none overflow-hidden" style="z-index:1;">
+        <span class="font-headline font-bold leading-none select-none" style="font-size:38vw; color: rgba(255,255,255,0.025); margin-right:-4vw; letter-spacing:-0.04em;">bs</span>
+      </div>
+
+      <!-- Vertical rule line -->
+      <div class="absolute left-6 md:left-12 top-32 bottom-24 w-px" style="background: linear-gradient(to bottom, transparent, rgba(223,194,159,0.2), transparent); z-index:1;"></div>
+
+      <div class="relative max-w-7xl mx-auto w-full" style="z-index:3;">
+
+        <p class="font-body text-xs tracking-[0.35em] uppercase text-primary mb-8 reveal">
+          Brand Strategy &amp; Digital Growth Studio
+        </p>
+
+        <h1 class="font-headline leading-[1.04] tracking-tight text-on-surface mb-10 reveal reveal-d1" style="font-size: clamp(2.8rem, 8vw, 6.5rem);">
+          Gürültüyü değil,<br/>
+          <em class="not-italic" style="color:#DFC29F;">etkiyi büyütürüz.</em>
+        </h1>
+
+        <div class="flex flex-col md:flex-row gap-8 md:gap-16 items-start md:items-end reveal reveal-d2">
+          <p class="font-body text-lg md:text-xl text-on-surface-variant font-light leading-relaxed max-w-lg">
+            Dürüst, yaratıcı ve stratejik iletişim ajansı.<br/>
+            Markanızın özünü bulur, güçlü fikirler ve doğru bir dille görünür kılarız.
+          </p>
+          <a href="#contact" class="cta-btn flex-shrink-0 bg-primary text-on-primary px-8 py-4 text-sm font-medium tracking-widest uppercase">
+            <span>Projelerinizi konuşalım</span>
+          </a>
+        </div>
+
+        <!-- Scroll cue -->
+        <div class="mt-16 flex items-center gap-4 reveal reveal-d3">
+          <div class="h-px w-16" style="background: rgba(232,229,225,0.12);"></div>
+          <span class="font-body text-xs tracking-widest text-on-surface/25 uppercase">Kaydır</span>
+          <span class="material-symbols-outlined bob text-on-surface/25 text-sm">south</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         ABOUT / INTRO  (cream)
+    ══════════════════════════════════════════════════ -->
+    <section id="about" class="py-24 md:py-40" style="background-color:#F5F2EC; color:#1A1714;">
+
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 items-start">
+
+          <!-- Left stat column -->
+          <div class="md:col-span-4 reveal">
+            <span class="font-body text-xs tracking-[0.3em] uppercase font-semibold block mb-4" style="color:#6B6560;">Kimiz</span>
+            <div class="flex items-end gap-1 mb-1">
+              <span class="font-headline font-light leading-none" style="font-size: clamp(5rem, 10vw, 7rem);">10</span>
+              <span class="font-headline text-3xl pb-3" style="color:#DFC29F;">+</span>
+            </div>
+            <p class="font-body text-xs tracking-widest uppercase mb-12" style="color:#6B6560;">yıl deneyim</p>
+
+            <div class="border-t pt-8" style="border-color: rgba(26,23,20,0.1);">
+              <p class="font-body text-xs tracking-widest uppercase mb-2" style="color:#6B6560;">Çalışma kapsamı</p>
+              <p class="font-headline text-lg">Ulusal &amp; Uluslararası</p>
+            </div>
+
+            <div class="border-t pt-8 mt-8" style="border-color: rgba(26,23,20,0.1);">
+              <p class="font-body text-xs tracking-widest uppercase mb-2" style="color:#6B6560;">Yaklaşımımız</p>
+              <p class="font-headline text-lg">Uçtan uca iletişim</p>
+            </div>
+          </div>
+
+          <!-- Right text column -->
+          <div class="md:col-span-8 flex flex-col gap-10">
+            <h2 class="font-headline leading-tight reveal reveal-d1" style="font-size: clamp(1.6rem, 3.5vw, 2.4rem);">
+              Be Social, iletişim ve marka stratejisi alanında on yılı aşkın deneyime sahip yaratıcı bir ajanstır.
+            </h2>
+
+            <p class="font-body text-lg leading-relaxed reveal reveal-d2" style="color:#6B6560;">
+              Ulusal ve uluslararası markalarla edindiğimiz tecrübeyle; strateji, yaratıcı üretim ve iletişim süreçlerini bütünsel olarak kurgularız. Amacımız, markaları yalnızca görünür kılmak değil, doğru konumlandırarak kalıcı bir etki yaratmaktır.
+            </p>
+
+            <p class="font-body text-base leading-relaxed reveal reveal-d2" style="color:#6B6560;">
+              İhtiyaç duyulan her noktada doğru ekibi kurar, süreci stratejik olarak yönetir ve tüm iletişimi tek merkezden koordine ederiz. Çünkü neyi neden yaptığını bilen ekiplerle çalışmanın daha güçlü olduğuna inanıyoruz.
+            </p>
+
+            <div class="border-l-2 pl-6 reveal reveal-d3" style="border-color: rgba(223,194,159,0.5);">
+              <p class="font-headline italic text-xl" style="color:#8B7355;">
+                "Bir fikir, diğerine yol açar."
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICES  (dark)
+    ══════════════════════════════════════════════════ -->
+    <section id="services" class="py-24 md:py-32 bg-surface text-on-surface">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16 md:mb-20">
+          <div class="reveal">
+            <span class="font-body text-xs tracking-[0.3em] uppercase text-primary block mb-4">Hizmetler</span>
+            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl leading-tight">
+              Tam olarak<br/>ne yapıyoruz?
+            </h2>
+          </div>
+          <p class="max-w-xs font-body text-on-surface-variant font-light leading-relaxed reveal reveal-d1">
+            Her adımda şeffaf, odaklı ve sonuç odaklı iletişim hizmeti sunuyoruz.
+          </p>
+        </div>
+
+        <!-- Service list -->
+        <div class="border-t border-outline-variant">
+
+          <div class="service-row group px-4 py-10 md:py-14 border-b border-outline-variant grid grid-cols-12 gap-4 items-center hover:bg-surface-container-low cursor-default reveal">
+            <span class="col-span-1 font-headline text-lg text-primary opacity-40">01</span>
+            <h3 class="col-span-10 md:col-span-4 font-headline text-2xl md:text-3xl">Marka Stratejisi</h3>
+            <p class="col-span-12 md:col-span-6 font-body text-on-surface-variant font-light leading-relaxed">
+              Pazar analizi, konumlandırma ve marka kimliği inşası. Her markayı benzersiz kılan gerçekleri doğru seçer, stratejiye dönüştürürüz.
+            </p>
+            <span class="service-arrow material-symbols-outlined col-span-1 text-primary hidden md:block">arrow_forward_ios</span>
+          </div>
+
+          <div class="service-row group px-4 py-10 md:py-14 border-b border-outline-variant grid grid-cols-12 gap-4 items-center hover:bg-surface-container-low cursor-default reveal">
+            <span class="col-span-1 font-headline text-lg text-primary opacity-40">02</span>
+            <h3 class="col-span-10 md:col-span-4 font-headline text-2xl md:text-3xl">Yaratıcı Üretim</h3>
+            <p class="col-span-12 md:col-span-6 font-body text-on-surface-variant font-light leading-relaxed">
+              Görsel tasarım, video içerik ve storytelling. Estetik ile fonksiyonun kusursuz birleştiği içerikler üretiriz.
+            </p>
+            <span class="service-arrow material-symbols-outlined col-span-1 text-primary hidden md:block">arrow_forward_ios</span>
+          </div>
+
+          <div class="service-row group px-4 py-10 md:py-14 border-b border-outline-variant grid grid-cols-12 gap-4 items-center hover:bg-surface-container-low cursor-default reveal">
+            <span class="col-span-1 font-headline text-lg text-primary opacity-40">03</span>
+            <h3 class="col-span-10 md:col-span-4 font-headline text-2xl md:text-3xl">İletişim Yönetimi</h3>
+            <p class="col-span-12 md:col-span-6 font-body text-on-surface-variant font-light leading-relaxed">
+              Sosyal medya, PR ve kriz yönetimi. Markanızın itibarını her platformda, doğru zamanda doğru sesle koruruz.
+            </p>
+            <span class="service-arrow material-symbols-outlined col-span-1 text-primary hidden md:block">arrow_forward_ios</span>
+          </div>
+
+          <div class="service-row group px-4 py-10 md:py-14 border-b border-outline-variant grid grid-cols-12 gap-4 items-center hover:bg-surface-container-low cursor-default reveal">
+            <span class="col-span-1 font-headline text-lg text-primary opacity-40">04</span>
+            <h3 class="col-span-10 md:col-span-4 font-headline text-2xl md:text-3xl">Dijital Büyüme</h3>
+            <p class="col-span-12 md:col-span-6 font-body text-on-surface-variant font-light leading-relaxed">
+              Web, sosyal medya ve dijital kanallar için bütünleşik büyüme stratejileri. Gürültüyü değil, etkiyi büyütürüz.
+            </p>
+            <span class="service-arrow material-symbols-outlined col-span-1 text-primary hidden md:block">arrow_forward_ios</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY / MANIFESTO  (cream)
+    ══════════════════════════════════════════════════ -->
+    <section class="py-24 md:py-48 text-center" style="background-color:#F5F2EC; color:#1A1714;">
+      <div class="max-w-4xl mx-auto px-6 md:px-12">
+        <div class="reveal">
+          <span class="font-headline text-8xl font-bold block mb-4" style="color: rgba(139,115,85,0.18); line-height:1;">"</span>
+          <blockquote class="font-headline leading-tight mb-14" style="font-size: clamp(1.5rem, 4vw, 3.2rem);">
+            Her şeyi yaptığını söyleyen ajanslara değil,&nbsp;<br/>
+            <em class="not-italic underline underline-offset-8" style="text-decoration-color: rgba(223,194,159,0.5);">neyi neden yaptığını bilen</em>&nbsp;<br/>
+            ekiplerle çalışın.
+          </blockquote>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3 reveal reveal-d1">
+          <span class="px-5 py-2.5 text-xs tracking-widest uppercase border" style="border-color: rgba(26,23,20,0.12); color:#6B6560;">Odaklanmış Strateji</span>
+          <span class="px-5 py-2.5 text-xs tracking-widest uppercase border" style="border-color: rgba(26,23,20,0.12); color:#6B6560;">Şeffaf Süreç</span>
+          <span class="px-5 py-2.5 text-xs tracking-widest uppercase border" style="border-color: rgba(26,23,20,0.12); color:#6B6560;">Kalıcı Etki</span>
+          <span class="px-5 py-2.5 text-xs tracking-widest uppercase border" style="border-color: rgba(26,23,20,0.12); color:#6B6560;">Butik Yaklaşım</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         WORK / PORTFOLIO  (dark)
+    ══════════════════════════════════════════════════ -->
+    <section id="work" class="py-24 md:py-32 bg-surface">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+        <div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-14 md:mb-20">
+          <div class="reveal">
+            <span class="font-body text-xs tracking-[0.3em] uppercase text-primary block mb-4">Portföy</span>
+            <h2 class="font-headline text-4xl md:text-5xl lg:text-6xl leading-tight">
+              Bir fikir,<br/>diğerine yol açar.
+            </h2>
+          </div>
+          <p class="max-w-xs font-body text-on-surface-variant font-light leading-relaxed text-right reveal reveal-d1">
+            Markalar için geliştirdiğimiz çalışmalardan bir seçki.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7">
+
+          <div class="work-card group relative overflow-hidden bg-surface-container reveal" style="aspect-ratio:4/5; cursor:pointer;">
+            <img loading="lazy" alt="Luxury branding project" class="w-full h-full object-cover grayscale"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB68LKIaaxrElgBxWQGNJqWWesLywYybPpFHzDYiD8hKOgqJAWHB7g0HHJmZJfV4djNTPvh-t6q-Rbw0kuH_Wq948KaYXP4dCWZj8vb819Ml55jXqHEi4EIjGxnCqNH0X8kevUs54TSSkeyr41dOBVT4NMSxEyNp8vQK0g1iM7tqgv3zycxhJEj73DcaIUaE-SSegod1myFpQmNSZxDiEcQ-85nv-w66Gs5UwRMP-caamFfmykvG0R9TrglH8ntmlEu9T1snX1xPuE"/>
+            <div class="overlay absolute inset-0 flex flex-col justify-end p-7" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.15) 60%, transparent 100%);">
+              <span class="font-body text-xs tracking-widest uppercase text-primary mb-2">Branding</span>
+              <h4 class="font-headline text-2xl text-white">Aura Fragrances</h4>
+            </div>
+          </div>
+
+          <div class="work-card group relative overflow-hidden bg-surface-container reveal reveal-d1 md:translate-y-10" style="aspect-ratio:1; cursor:pointer;">
+            <img loading="lazy" alt="Digital experience project" class="w-full h-full object-cover grayscale"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpVnyJuVax5lKoTENkomOmGunxm23RDqYQm6TAMAiFW4ni5OkORqbtJpS2fbii3Ql9JcMS5wyg_eRv-OsjDhOeeJTrMUCiOhd_scehadIWIsmKUuJ5tBrKnRoQOxGdCQulImaevwj86utDfESZuTOrl9e6psIPvET0F5m7Q2jpCnDKHrAw5BsiQyDeEk7ELqynfYy5Qu4puvnu7qvM0SZVTjlvaD7NhEcozopnxgmgAokGcVL3j3SKo2eAQh3k3tjLIDUTMDBBkiU"/>
+            <div class="overlay absolute inset-0 flex flex-col justify-end p-7" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.15) 60%, transparent 100%);">
+              <span class="font-body text-xs tracking-widest uppercase text-primary mb-2">Web Tasarım</span>
+              <h4 class="font-headline text-2xl text-white">Vanguard Tech</h4>
+            </div>
+          </div>
+
+          <div class="work-card group relative overflow-hidden bg-surface-container reveal reveal-d2" style="aspect-ratio:4/5; cursor:pointer;">
+            <img loading="lazy" alt="Architecture strategy project" class="w-full h-full object-cover grayscale"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT0i26zmZg89mB5wNJvURdz3XHaVLrZWgSnLOb57sXyYqgLrL0W18vYgNfe8NvcIQev9YsdFAmjkUBGTgHYll2gAgcKd1W87LqY06a6PDON3rR9NXU7LiPihH6oz1tIIiUMHooHxKDohVqxB6-cu9Cw3g8qwKmp_KtWJWMJ2BomX3rUJnJzwCsJ8bkuSkMnycWUEDyLlNNSgM_ud23MzATyYfQTh2SHeXtYRqx_yJ2o8iQsl5oGUtJYZRqU6InjIRXJZvAisQad00"/>
+            <div class="overlay absolute inset-0 flex flex-col justify-end p-7" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.15) 60%, transparent 100%);">
+              <span class="font-body text-xs tracking-widest uppercase text-primary mb-2">Strateji</span>
+              <h4 class="font-headline text-2xl text-white">Urban Habitat</h4>
+            </div>
+          </div>
+
+          <div class="work-card group relative overflow-hidden bg-surface-container reveal md:col-start-2" style="aspect-ratio:1; cursor:pointer;">
+            <img loading="lazy" alt="Görsel üretim - Chronos" class="w-full h-full object-cover grayscale"
+              src="images/chronos_featured.png"/>
+            <div class="overlay absolute inset-0 flex flex-col justify-end p-7" style="background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.15) 60%, transparent 100%);">
+              <span class="font-body text-xs tracking-widest uppercase text-primary mb-2">Görsel Üretim</span>
+              <h4 class="font-headline text-2xl text-white">Chronos</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         TEAM  (cream)
+    ══════════════════════════════════════════════════ -->
+    <section id="team" class="py-24 md:py-32" style="background-color:#F5F2EC; color:#1A1714;">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
+          <div class="reveal">
+            <span class="font-body text-xs tracking-[0.3em] uppercase font-semibold block mb-4" style="color:#6B6560;">Arkamızdaki İnsanlar</span>
+            <h2 class="font-headline text-5xl md:text-6xl">Ekibimiz</h2>
+          </div>
+          <p class="max-w-xs font-body leading-relaxed reveal reveal-d1" style="color:#6B6560;">
+            Farklı disiplinlerden gelen, ortak bir vizyona sahip yaratıcı zihinler.
+          </p>
+        </div>
+
+        <!-- 5-member grid -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-10">
+
+          <!-- Buket -->
+          <div class="team-card text-center reveal">
+            <div class="aspect-square mb-5 overflow-hidden" style="background:#E8E4DC;">
+              <img
+                alt="Buket Ceylan"
+                loading="lazy"
+                class="team-photo w-full h-full object-cover object-top"
+                src="images/Ekip_üyeleri/Buket CEYLAN.png"
+              />
+            </div>
+            <h4 class="font-headline text-lg mb-1">Buket Ceylan</h4>
+            <p class="font-body text-xs tracking-widest uppercase leading-relaxed" style="color:#6B6560;">
+              Founder &amp;<br/>Strategic Creative Director
+            </p>
+          </div>
+
+          <!-- Cem — offset down -->
+          <div class="team-card text-center reveal reveal-d1 md:mt-10">
+            <div class="aspect-square mb-5 overflow-hidden" style="background:#E8E4DC;">
+              <img
+                alt="Cem Gözen"
+                loading="lazy"
+                class="team-photo w-full h-full object-cover object-top"
+                src="images/Ekip_üyeleri/Cem Gözen.jpeg"
+              />
+            </div>
+            <h4 class="font-headline text-lg mb-1">Cem Gözen</h4>
+            <p class="font-body text-xs tracking-widest uppercase leading-relaxed" style="color:#6B6560;">
+              Creative Director
+            </p>
+          </div>
+
+          <!-- Özge -->
+          <div class="team-card text-center reveal reveal-d2">
+            <div class="aspect-square mb-5 overflow-hidden" style="background:#E8E4DC;">
+              <img
+                alt="Özge Aydın"
+                loading="lazy"
+                class="team-photo w-full h-full object-cover object-top"
+                src="images/Ekip_üyeleri/Özge AYDIN.png"
+              />
+            </div>
+            <h4 class="font-headline text-lg mb-1">Özge Aydın</h4>
+            <p class="font-body text-xs tracking-widest uppercase leading-relaxed" style="color:#6B6560;">
+              Social Media Manager &amp;<br/>Graphic Designer
+            </p>
+          </div>
+
+          <!-- Samed — offset down -->
+          <div class="team-card text-center reveal reveal-d3 md:mt-10">
+            <div class="aspect-square mb-5 overflow-hidden" style="background:#E8E4DC;">
+              <img
+                alt="Samed Akgün"
+                loading="lazy"
+                class="team-photo w-full h-full object-cover object-center"
+                src="images/Ekip_üyeleri/Abdussamed Akgün.JPG"
+              />
+            </div>
+            <h4 class="font-headline text-lg mb-1">Samed Akgün</h4>
+            <p class="font-body text-xs tracking-widest uppercase leading-relaxed" style="color:#6B6560;">
+              Web &amp;<br/>Automation Developer
+            </p>
+          </div>
+
+          <!-- Berçem -->
+          <div class="team-card text-center reveal reveal-d4">
+            <div class="aspect-square mb-5 overflow-hidden" style="background:#E8E4DC;">
+              <img
+                alt="Berçem İçme"
+                loading="lazy"
+                class="team-photo w-full h-full object-cover object-top"
+                src="images/Ekip_üyeleri/Berçem içme.jpeg"
+              />
+            </div>
+            <h4 class="font-headline text-lg mb-1">Berçem İçme</h4>
+            <p class="font-body text-xs tracking-widest uppercase leading-relaxed" style="color:#6B6560;">
+              Art Director
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CTA / CONTACT  (deep dark)
+    ══════════════════════════════════════════════════ -->
+    <section id="contact" class="py-24 md:py-48 text-center relative overflow-hidden" style="background-color:#0A0A0A;">
+
+      <!-- Faint background circle -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none" style="z-index:0;">
+        <div class="rounded-full" style="width:70vw; height:70vw; max-width:800px; max-height:800px; background: radial-gradient(circle, rgba(223,194,159,0.04) 0%, transparent 70%);"></div>
+      </div>
+
+      <div class="relative max-w-3xl mx-auto px-6 md:px-12" style="z-index:1;">
+        <span class="font-body text-xs tracking-[0.3em] uppercase text-primary block mb-6 reveal">Çalışalım</span>
+
+        <h2 class="font-headline leading-tight mb-8 reveal reveal-d1" style="font-size: clamp(2.2rem, 6vw, 5rem);">
+          Projeleriniz hakkında<br/>konuşalım.
+        </h2>
+
+        <p class="font-body text-on-surface-variant mb-14 max-w-md mx-auto leading-relaxed reveal reveal-d2">
+          Eğer yaklaşımımız size yakın geliyorsa, markanız için birlikte çok daha fazlasını inşa edebiliriz.
+        </p>
+
+        <a href="mailto:hello@besocial.com"
+           class="cta-btn inline-block bg-primary text-on-primary px-10 py-5 text-sm font-medium tracking-widest uppercase mb-4 reveal reveal-d2">
+          <span>hello@besocial.com</span>
+        </a>
+
+        <p class="font-headline italic text-xl mt-14 reveal reveal-d3" style="color: rgba(223,194,159,0.3);">
+          One idea leads to another.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════ -->
+  <footer style="background-color:#080808; border-top: 1px solid rgba(255,255,255,0.04);" class="py-12 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+
+      <img src="images/logo/besocial4.png" alt="Be Social" class="h-6 w-auto opacity-50" style="filter: url(#white-bg-remove);"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+      <span class="font-headline text-base font-bold" style="display:none; color:rgba(232,229,225,0.5); font-size:1rem; letter-spacing:-0.01em;">be social</span>
+
+      <div class="flex gap-8">
+        <a href="#" class="font-body text-xs tracking-widest uppercase text-on-surface/30 hover:text-primary transition-colors duration-300">Instagram</a>
+        <a href="#" class="font-body text-xs tracking-widest uppercase text-on-surface/30 hover:text-primary transition-colors duration-300">LinkedIn</a>
+        <a href="#" class="font-body text-xs tracking-widest uppercase text-on-surface/30 hover:text-primary transition-colors duration-300">Twitter</a>
+      </div>
+
+      <p class="font-body text-xs tracking-widest uppercase text-on-surface/20">© 2025 Be Social</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════════════════ -->
+  <script>
+    // ── Scroll progress bar ──────────────────────────
+    const progressBar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+      const pct = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      progressBar.style.width = pct + '%';
+    }, { passive: true });
+
+    // ── Navbar scroll state ──────────────────────────
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ── Reveal on scroll ─────────────────────────────
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // ── Mobile menu ──────────────────────────────────
+    const hamburger    = document.getElementById('hamburger');
+    const mobileMenu   = document.getElementById('mobile-menu');
+    const closeMenuBtn = document.getElementById('close-menu');
+
+    function openMenu()  { mobileMenu.classList.add('open');    hamburger.classList.add('open');    document.body.style.overflow = 'hidden'; }
+    function closeMenu() { mobileMenu.classList.remove('open'); hamburger.classList.remove('open'); document.body.style.overflow = '';       }
+
+    hamburger.addEventListener('click', openMenu);
+    closeMenuBtn.addEventListener('click', closeMenu);
+    document.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeMenu));
+
+    // ── Active nav highlighting ───────────────────────
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id]');
+
+    new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => {
+            const active = l.getAttribute('href') === '#' + e.target.id;
+            l.style.color = active ? '#DFC29F' : '';
+            l.style.opacity = active ? '1' : '';
+          });
+        }
+      });
+    }, { threshold: 0.35 }).observe;
+
+    sections.forEach(s => {
+      new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          navLinks.forEach(l => {
+            const active = l.getAttribute('href') === '#' + e.target.id;
+            l.style.color   = active ? '#DFC29F' : '';
+            l.style.opacity = active ? '1' : '';
+          });
+        });
+      }, { threshold: 0.4 }).observe(s);
+    });
+  </script>
+
+</body>
+</html>
