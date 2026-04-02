@@ -14,3 +14,9 @@ doc/
 
 # macOS
 .DS_Store
+
+# Working/draft files
+code.html
+code2.html
+index2.html
+besocial.code-workspace
